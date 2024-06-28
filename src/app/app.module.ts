@@ -3,6 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeModule } from '../components/home/home.module';
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { CustomerEffects } from '../state/home/effects';
+import { dbReducer } from '../state/home/reducer';
 
 @NgModule({
   declarations: [
@@ -10,9 +19,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule,
+    MatToolbarModule,
+    StoreModule.forRoot({ customers: dbReducer }),
+    EffectsModule.forRoot([CustomerEffects]),
+
   ],
-  providers: [],
+  providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
