@@ -1,6 +1,7 @@
 # Customer Database Management Application
 
 This project is a simple customer database management application built using Angular, NgRx, and Express with an SQLite database. The application allows users to load initial data into the database, query the database for customer information, and clear the database. The frontend provides a user-friendly interface with status notifications and loading spinners for better user experience.
+![image](https://github.com/Capa03/Customer-Database-Management-Application/assets/79425111/e17720ce-e1d3-461c-952c-1c52d02bfdfe)
 
 ## Features
 
