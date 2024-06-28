@@ -58,17 +58,12 @@ This project is a simple customer database management application built using An
 
 ### Frontend Setup
 
-1. Navigate to the frontend directory:
-   ```bash
-   cd ../frontend
-   ```
-
-2. Install dependencies:
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-3. Start the Angular development server:
+2. Start the Angular development server:
    ```bash
    ng serve
    ```
