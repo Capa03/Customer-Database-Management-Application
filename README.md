@@ -40,7 +40,7 @@ This project is a simple customer database management application built using An
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/customer-db-app.git
+   git clone https://github.com/Capa03/customer-db-app.git
    cd customer-db-app/backend
    ```
 
